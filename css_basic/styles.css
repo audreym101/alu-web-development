@@ -1,0 +1,48 @@
+/* styles.css */
+
+/* Responsive styles for smartphones */
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    display: block;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+
+  /* Make header items stack vertically */
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  header li {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  header {
+    padding: 10px 0;
+  }
+
+  /* Adjust footer for smaller screens */
+  footer {
+    text-align: center;
+  }
+
+  /* Adjust article and aside for mobile */
+  article,
+  aside {
+    padding: 20px;
+  }
+
+  /* Ensure images scale properly */
+  article img {
+    max-width: 100%;  /* Make sure images don't overflow */
+    height: auto;  /* Maintain aspect ratio */
+  }
+
+  /* Header alignment */
+  header li a {
+    margin: 0 10px;
+  }
+}
